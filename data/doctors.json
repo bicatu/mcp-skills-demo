@@ -1,0 +1,110 @@
+[
+  {
+    "id": "doc-1",
+    "name": "Dr. Sarah Mitchell",
+    "specialtyId": "spec-1",
+    "bio": "Board-certified family medicine physician with 15 years of experience in primary care.",
+    "availableDays": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+    "slotDurationMinutes": 30,
+    "workingHours": { "start": "08:00", "end": "16:00" }
+  },
+  {
+    "id": "doc-2",
+    "name": "Dr. James Chen",
+    "specialtyId": "spec-1",
+    "bio": "General practitioner specializing in preventive medicine and chronic disease management.",
+    "availableDays": ["monday", "wednesday", "friday"],
+    "slotDurationMinutes": 30,
+    "workingHours": { "start": "09:00", "end": "17:00" }
+  },
+  {
+    "id": "doc-3",
+    "name": "Dr. Elena Rodriguez",
+    "specialtyId": "spec-2",
+    "bio": "Interventional cardiologist with expertise in cardiac catheterization and stent placement.",
+    "availableDays": ["monday", "tuesday", "thursday"],
+    "slotDurationMinutes": 45,
+    "workingHours": { "start": "08:00", "end": "15:00" }
+  },
+  {
+    "id": "doc-4",
+    "name": "Dr. Michael Park",
+    "specialtyId": "spec-2",
+    "bio": "Cardiologist focused on heart failure management and cardiac rehabilitation.",
+    "availableDays": ["tuesday", "wednesday", "friday"],
+    "slotDurationMinutes": 45,
+    "workingHours": { "start": "09:00", "end": "16:00" }
+  },
+  {
+    "id": "doc-5",
+    "name": "Dr. Amara Okafor",
+    "specialtyId": "spec-3",
+    "bio": "Dermatologist specializing in clinical and cosmetic dermatology with research in melanoma detection.",
+    "availableDays": ["monday", "wednesday", "thursday", "friday"],
+    "slotDurationMinutes": 30,
+    "workingHours": { "start": "09:00", "end": "17:00" }
+  },
+  {
+    "id": "doc-6",
+    "name": "Dr. Robert Schneider",
+    "specialtyId": "spec-4",
+    "bio": "Orthopedic surgeon with fellowship training in sports medicine and joint reconstruction.",
+    "availableDays": ["monday", "tuesday", "wednesday"],
+    "slotDurationMinutes": 45,
+    "workingHours": { "start": "07:30", "end": "15:30" }
+  },
+  {
+    "id": "doc-7",
+    "name": "Dr. Lisa Patel",
+    "specialtyId": "spec-5",
+    "bio": "Pediatrician with special interest in developmental pediatrics and adolescent medicine.",
+    "availableDays": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+    "slotDurationMinutes": 30,
+    "workingHours": { "start": "08:30", "end": "16:30" }
+  },
+  {
+    "id": "doc-8",
+    "name": "Dr. Thomas Wright",
+    "specialtyId": "spec-5",
+    "bio": "Pediatrician focused on childhood nutrition and preventive care strategies.",
+    "availableDays": ["tuesday", "thursday"],
+    "slotDurationMinutes": 30,
+    "workingHours": { "start": "09:00", "end": "17:00" }
+  },
+  {
+    "id": "doc-9",
+    "name": "Dr. Nina Volkov",
+    "specialtyId": "spec-6",
+    "bio": "Neurologist with expertise in migraine management, epilepsy, and neurodegenerative diseases.",
+    "availableDays": ["monday", "wednesday", "friday"],
+    "slotDurationMinutes": 60,
+    "workingHours": { "start": "08:00", "end": "14:00" }
+  },
+  {
+    "id": "doc-10",
+    "name": "Dr. David Kim",
+    "specialtyId": "spec-7",
+    "bio": "Ophthalmologist specializing in cataract surgery, glaucoma treatment, and retinal disorders.",
+    "availableDays": ["monday", "tuesday", "thursday", "friday"],
+    "slotDurationMinutes": 30,
+    "workingHours": { "start": "08:00", "end": "16:00" }
+  },
+  {
+    "id": "doc-11",
+    "name": "Dr. Maria Santos",
+    "specialtyId": "spec-8",
+    "bio": "Psychiatrist specializing in anxiety disorders, depression, and cognitive behavioral therapy.",
+    "availableDays": ["monday", "tuesday", "wednesday", "thursday"],
+    "slotDurationMinutes": 60,
+    "workingHours": { "start": "10:00", "end": "18:00" }
+  },
+  {
+    "id": "doc-12",
+    "name": "Dr. Ahmed Hassan",
+    "specialtyId": "spec-4",
+    "bio": "Orthopedic specialist in spinal surgery and minimally invasive procedures.",
+    "availableDays": ["wednesday", "thursday", "friday"],
+    "slotDurationMinutes": 45,
+    "workingHours": { "start": "08:00", "end": "16:00" }
+  }
+]

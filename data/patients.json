@@ -1,0 +1,37 @@
+[
+  {
+    "id": "pat-1",
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "phone": "+1-555-0101",
+    "dateOfBirth": "1985-03-15"
+  },
+  {
+    "id": "pat-2",
+    "name": "Bob Williams",
+    "email": "bob.williams@example.com",
+    "phone": "+1-555-0102",
+    "dateOfBirth": "1990-07-22"
+  },
+  {
+    "id": "pat-3",
+    "name": "Carol Davis",
+    "email": "carol.davis@example.com",
+    "phone": "+1-555-0103",
+    "dateOfBirth": "1978-11-08"
+  },
+  {
+    "id": "pat-4",
+    "name": "Daniel Martinez",
+    "email": "daniel.martinez@example.com",
+    "phone": "+1-555-0104",
+    "dateOfBirth": "2001-01-30"
+  },
+  {
+    "id": "pat-5",
+    "name": "Eva Thompson",
+    "email": "eva.thompson@example.com",
+    "phone": "+1-555-0105",
+    "dateOfBirth": "1995-09-12"
+  }
+]

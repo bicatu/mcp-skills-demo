@@ -1,0 +1,42 @@
+[
+  {
+    "id": "spec-1",
+    "name": "General Practice",
+    "description": "Primary care for general health concerns, preventive care, and routine check-ups."
+  },
+  {
+    "id": "spec-2",
+    "name": "Cardiology",
+    "description": "Diagnosis and treatment of heart and cardiovascular system disorders."
+  },
+  {
+    "id": "spec-3",
+    "name": "Dermatology",
+    "description": "Treatment of skin, hair, and nail conditions including acne, eczema, and skin cancer screening."
+  },
+  {
+    "id": "spec-4",
+    "name": "Orthopedics",
+    "description": "Care for musculoskeletal system including bones, joints, ligaments, and muscles."
+  },
+  {
+    "id": "spec-5",
+    "name": "Pediatrics",
+    "description": "Medical care for infants, children, and adolescents up to age 18."
+  },
+  {
+    "id": "spec-6",
+    "name": "Neurology",
+    "description": "Diagnosis and treatment of nervous system disorders including brain, spinal cord, and nerve conditions."
+  },
+  {
+    "id": "spec-7",
+    "name": "Ophthalmology",
+    "description": "Eye and vision care including diagnosis and treatment of eye diseases and surgical procedures."
+  },
+  {
+    "id": "spec-8",
+    "name": "Psychiatry",
+    "description": "Mental health care including diagnosis and treatment of emotional and behavioral disorders."
+  }
+]

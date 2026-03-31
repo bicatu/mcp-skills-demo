@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "medical-appointments": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["tsx", "src/mcp/server.ts"],
+      "env": {
+        "SERVICE_URL": "http://localhost:3000"
+      }
+    }
+  }
+}
