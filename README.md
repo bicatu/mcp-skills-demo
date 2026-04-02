@@ -7,6 +7,7 @@ Built with [TypeScript](https://www.typescriptlang.org/), [Hono](https://hono.de
 ## Table of Contents
 
 - [Features](#features)
+- [Agent Skill](#agent-skill)
 - [Quick Start](#quick-start)
 - [Architecture](#architecture)
 - [REST API Endpoints](#rest-api-endpoints)
@@ -45,6 +46,38 @@ Built with [TypeScript](https://www.typescriptlang.org/), [Hono](https://hono.de
 | **Sampling** | `recommend_specialist` uses LLM sampling to match symptoms to specialties |
 | **Roots** | Server registers a root for the medical appointments workspace |
 | **Completion** | Prompts use `completable()` for auto-completing specialty names and patient IDs |
+
+## Agent Skill
+
+A [SKILL.md](https://agentskills.io/specification) for this domain is provided at [`.github/skills/medical-appointments/SKILL.md`](.github/skills/medical-appointments/SKILL.md). It mirrors the capabilities of the MCP server without requiring the MCP protocol — any compatible agent (GitHub Copilot, Claude Code, etc.) can load it on demand.
+
+### What the Skill Covers
+
+| Skill Workflow | Equivalent MCP Primitive |
+|---------------|--------------------------|
+| Find Doctors | `search_doctors` tool |
+| Check Available Slots | `get_available_slots` tool |
+| Book Appointment | `book_appointment` tool |
+| Cancel Appointment | `cancel_appointment` tool |
+| List Appointments | `list_appointments` tool |
+| Recommend Specialist | `recommend_specialist` tool |
+| Schedule Appointment | `schedule-appointment` prompt |
+| Patient History | `patient-history` prompt |
+| Triage Symptoms | `triage-symptoms` prompt |
+
+The skill interacts with the REST service directly over HTTP using the agent's native tool access.
+
+### Skill Limitations
+
+The following MCP server features have no equivalent in the [agentskills.io specification](https://agentskills.io/specification) and are therefore not replicated:
+
+| MCP Feature | Limitation |
+|-------------|------------|
+| **Elicitation** | `book_appointment` and `cancel_appointment` use a native UI confirmation dialog in the MCP server. Skills have no equivalent; the agent requests confirmation through conversation instead. |
+| **Sampling** | `recommend_specialist` calls a sub-LLM via MCP sampling to match symptoms to specialties. The skill uses the agent's own reasoning directly (functionally equivalent). |
+| **Argument completion** | MCP prompts use `completable()` to auto-suggest specialty names and patient IDs in the client UI. Skills provide no interactive completion. |
+| **Roots** | The MCP server registers a workspace root (`roots/list`). This is an MCP transport concept with no skill equivalent. |
+| **VS Code-specific skill fields** | Fields such as `argument-hint`, `user-invocable`, and `disable-model-invocation` are VS Code Copilot extensions to the SKILL.md format. They are not part of the agentskills.io spec and are omitted to keep the skill portable. |
 
 ## Quick Start
 
