@@ -127,9 +127,9 @@ Or use the prompts from the prompt picker:
 ## Architecture
 
 ```
-┌─────────────────┐     stdio      ┌───────────────────┐     HTTP      ┌──────────────────┐
+┌─────────────────┐     stdio      ┌───────────────────┐     HTTP     ┌──────────────────┐
 │   VS Code /     │◄──────────────►│   MCP Server      │─────────────►│  Hono REST API   │
-│   MCP Client    │                │   (TypeScript)    │  localhost    │  (localhost:3000) │
+│   MCP Client    │                │   (TypeScript)    │  localhost   │  (localhost:3000)│
 └─────────────────┘                └───────────────────┘              └──────────────────┘
                                      Tools, Resources,                  In-memory store
                                      Prompts                            + JSON bootstrap
