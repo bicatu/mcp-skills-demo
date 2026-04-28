@@ -1,5 +1,6 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { ListRootsRequestSchema } from "@modelcontextprotocol/sdk/types.js";
 import { ServiceClient } from "./api-client.js";
 import { registerTools } from "./tools.js";
 import { registerResources } from "./resources.js";
@@ -40,7 +41,7 @@ registerPrompts(mcpServer, client);
 
 // Handle roots listing (client feature demo)
 lowLevelServer.setRequestHandler(
-  { method: "roots/list" } as any,
+  ListRootsRequestSchema,
   async () => {
     return {
       roots: [

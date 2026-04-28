@@ -9,6 +9,7 @@ Built with [TypeScript](https://www.typescriptlang.org/), [Hono](https://hono.de
 - [Features](#features)
 - [Agent Skill](#agent-skill)
 - [Quick Start](#quick-start)
+- [MCP Inspector](#mcp-inspector)
 - [Architecture](#architecture)
 - [REST API Endpoints](#rest-api-endpoints)
 - [Project Structure](#project-structure)
@@ -123,6 +124,51 @@ Or use the prompts from the prompt picker:
 - **Schedule Appointment** — guided scheduling workflow
 - **Patient History** — review a patient's visits
 - **Triage Symptoms** — symptom-based specialist matching
+
+## MCP Inspector
+
+[MCP Inspector](https://github.com/modelcontextprotocol/inspector) is a browser-based UI for interactively testing MCP servers — browsing tools, resources, and prompts, and invoking them directly.
+
+### 1. Start the REST API
+
+The MCP server calls the REST API over HTTP, so it must be running first:
+
+```bash
+npm run dev:service
+```
+
+### 2. Launch the Inspector
+
+In a second terminal, run:
+
+```bash
+npx @modelcontextprotocol/inspector tsx src/mcp/server.ts
+```
+
+The Inspector will start the MCP server as a subprocess and open a browser UI at **http://localhost:5173**.  Choose the option STDIO
+
+If the REST API is running on a non-default port, pass `SERVICE_URL`:
+
+```bash
+SERVICE_URL=http://localhost:3000 npx @modelcontextprotocol/inspector tsx src/mcp/server.ts
+```
+
+### 3. Try elicitation
+
+Elicitation is triggered by `book_appointment` and `cancel_appointment`. The Inspector will render a native confirmation dialog before the action is committed.
+
+Call `book_appointment` with:
+
+```json
+{
+  "patientId": "pat-1",
+  "doctorId": "doc-1",
+  "dateTime": "2026-05-05T10:00:00",
+  "reason": "Annual checkup"
+}
+```
+
+The Inspector will pause and ask you to confirm before the appointment is booked.
 
 ## Architecture
 
